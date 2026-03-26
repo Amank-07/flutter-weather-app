@@ -1,33 +1,46 @@
-# Weather App (Flutter + Provider)
+# 🌦 Weather App (Flutter + Provider)
+
+🚀 **Live APK:** https://tinyurl.com/49r3frur
+👉 You can download and try the application directly on your Android device.
+
+---
+
+## 📱 Overview
 
 A clean, beginner-friendly, production-style weather app built with Flutter.
 
-## Features
+---
 
-- Search weather by city
-- Current temperature, condition, humidity, wind speed
-- Weather icon from API
-- Date and time display
-- Loading indicator while fetching
-- Error handling (invalid city / network issue)
-- 5-day forecast (horizontal list)
-- Temperature unit toggle (C/F)
-- Save last searched city using local storage
-- Pull-to-refresh support
-- Condition-based gradient background
-- Basic smooth animations (fade/slide style transition)
+## ✨ Features
 
-## Tech Stack
+* Search weather by city
+* Current temperature, condition, humidity, wind speed
+* Weather icon from API
+* Date and time display
+* Loading indicator while fetching
+* Error handling (invalid city / network issue)
+* 5-day forecast (horizontal list)
+* Temperature unit toggle (C/F)
+* Save last searched city using local storage
+* Pull-to-refresh support
+* Condition-based gradient background
+* Basic smooth animations (fade/slide transitions)
 
-- Flutter (stable)
-- Dart
-- Provider (state management)
-- `http` (API calls)
-- `shared_preferences` (local storage)
+---
 
-## Project Structure
+## 🛠 Tech Stack
 
-```text
+* Flutter (stable)
+* Dart
+* Provider (state management)
+* `http` (API calls)
+* `shared_preferences` (local storage)
+
+---
+
+## 📂 Project Structure
+
+```
 lib/
   main.dart
   models/
@@ -45,20 +58,28 @@ lib/
     forecast_list.dart
 ```
 
-## Setup Instructions
+---
 
-1. Create a free API key from [OpenWeatherMap](https://openweathermap.org/api).
-2. Open `lib/services/weather_service.dart`.
+## ⚙️ Setup Instructions
+
+1. Create a free API key from OpenWeatherMap
+2. Open `lib/services/weather_service.dart`
 3. Replace:
-   - `YOUR_OPENWEATHER_API_KEY`
-   with your real API key.
-4. Install packages:
-   - `flutter pub get`
-5. Run app:
-   - `flutter run`
 
-## Notes
+   ```
+   YOUR_OPENWEATHER_API_KEY
+   ```
+4. Run:
 
-- API calls use metric units (Celsius). Fahrenheit is converted in app logic.
-- Last searched city and chosen unit are saved locally.
-- Pull down to refresh latest data.
+   ```
+   flutter pub get
+   flutter run
+   ```
+
+---
+
+## 💡 Notes
+
+* Uses metric units (Celsius), Fahrenheit handled in-app
+* Local storage saves last searched city & unit
+* Pull-to-refresh fetches latest data
